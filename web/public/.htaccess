@@ -1,0 +1,7 @@
+# Real files (the React build, fonts, images) are served as they are.
+# Everything else goes to api/index.php: /api/... is the JSON API,
+# any other path gets the React app (which then shows the right page).
+DirectoryIndex index.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ api/index.php [QSA,L]

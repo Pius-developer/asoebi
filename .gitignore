@@ -1,0 +1,11 @@
+/config.local.php
+data/*.sqlite*
+data/images/
+data/receipts/
+data/cards/
+web/node_modules/
+.DS_Store
+
+# Personal notes: kept on my Mac, not on GitHub
+LEARN.md
+DEPLOY.md
